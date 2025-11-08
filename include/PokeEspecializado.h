@@ -28,22 +28,4 @@ class PokeStarter : public PokemonOriginal
     bool puedeEvolucionar;
 };
 
-class PokeLegen : public PokemonOriginal
-{
-    public:
-    PokeLegen();
-    PokeLegen(const string nombre, const string tipo1, const string tipo2, int nivel, int hp, int ataque, int defensa, int especial, int velocidad,
-                const string ubicacion);
-    ~PokeLegen();
-
-    string getUbicacion();
-    void setUbicacion(const string ubicacion);
-
-    void mostrarStats() const override;
-    int calcularStatsTotales() const override;
-
-    private:
-    string ubicacion;
-};
-
 #endif // POKEESPECIALIZADO_H

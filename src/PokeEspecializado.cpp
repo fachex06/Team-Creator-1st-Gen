@@ -31,11 +31,13 @@ bool PokeStarter::getPuedeEvolucionar()
 
 void PokeStarter::setPuedeEvolucionar(bool puedeEvolucionar)
 {
+    PokemonOriginal::mostrarStats();
     this->puedeEvolucionar=puedeEvolucionar;
 }
 
 void PokeStarter::mostrarStats() const
 {
+    PokemonOriginal::mostrarStats();
     cout << "Puede evolucionar: " << (puedeEvolucionar ? "Si" : "No") << endl;
 }
 

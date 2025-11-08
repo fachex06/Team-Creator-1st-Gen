@@ -98,7 +98,7 @@ int PokemonOriginal::getEspecial()
     return especial;
 }
 
-void PokemonOriginal::setEspecial(int ataque)
+void PokemonOriginal::setEspecial(int especial)
 {
     this->especial = especial;
 }
@@ -211,7 +211,7 @@ void PokemonOriginal::mostrarStats() const
     cout << "Tipo: " << tipo1;
     if (!tipo2.empty()) cout << "/" << tipo2;
     cout << endl;
-    cout << "PS: " << endl;
+    cout << "PS: " << hp << endl;
     cout << "Ataque: " << ataque << endl;
     cout << "Defensa: " << defensa << endl;
     cout << "Especial: " << especial << endl;
